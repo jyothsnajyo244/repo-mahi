@@ -1,0 +1,21 @@
+Clone this repository:
+    $ git clone https://github.com/AuthorizeNet/sample-code-java.git
+Run "mvn package" in the root directory to create the SampleCode console app.
+Run the individual samples by name. For example:
+     > java -jar target/SampleCode.jar [CodeSampleName]
+e.g.
+
+     > java -jar target/SampleCode.jar ChargeCreditCard
+Running SampleCode without a parameter will give you the list of sample names.
+
+NOTE : You can update to your Sandbox credentials in SampleCode.java
+
+For using behind proxy
+
+Please set the JAVA environment proxy using a similar code :
+
+    System.setProperty(Constants.HTTPS_USE_PROXY, "true");
+    System.setProperty(Constants.HTTPS_PROXY_HOST, "127.0.0.1");
+    System.setProperty(Constants.HTTPS_PROXY_PORT, "8888");
+
+
